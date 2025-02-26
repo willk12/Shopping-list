@@ -1,44 +1,50 @@
-🛒 Lista de Compras
+# React + TypeScript + Vite
 
-Um aplicativo minimalista de lista de compras desenvolvido com React e Vite.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-🚀 Tecnologias Utilizadas
+Currently, two official plugins are available:
 
-React
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Vite
+## Expanding the ESLint configuration
 
-Tailwind CSS (opcional)
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-React Hooks
+- Configure the top-level `parserOptions` property like this:
 
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-Acesse a pasta do projeto:
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-cd lista-de-compras
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-Instale as dependências:
-
-npm install
-
-▶️ Executando o Projeto
-
-Para rodar o app localmente:
-
-npm run dev
-
-Acesse no navegador: http://localhost:5173/
-
-📌 Funcionalidades
-
-✔️ Adicionar itens à lista de compras✔️ Marcar itens como comprados✔️ Remover itens da lista✔️ Persistência dos itens no Local Storage (opcional)
-
-📸 Captura de Tela (Opcional)
-
-
-
-📜 Licença
-
-Este projeto está licenciado sob a MIT License - sinta-se livre para utilizá-lo e modificá-lo como quiser!
-
-Criado por William Almeida Lima🚀
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
