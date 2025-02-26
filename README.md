@@ -18,4 +18,5 @@ Este é um projeto de **Todo List** desenvolvido em **React** com **TypeScript**
 
 ## 🖥️ Preview
 
-Você pode testar o app em breve... 🙂‍↔️ 
+Você pode testar o app ([todolistwill.netlify.app](https://todolistwill.netlify.app/)).
+
