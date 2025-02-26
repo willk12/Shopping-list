@@ -11,7 +11,7 @@ const Todo = ({ todo, removeTodo, completeTodos }: TodoProps) => {
       key={todo.id}
       
     >
-      <div className="content" style={{textDecoration: todo.isCompleted ? "line-through" : ""}}>
+     <div className={`content ${todo.isCompleted ? "line-through text-green-700 " : ""}`}>
         <p className="text-gray-700 mt-4">{todo.text}</p>
         <p className="category text-gray-400">{todo.category}</p>
       </div>

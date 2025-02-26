@@ -50,7 +50,7 @@ function App() {
       toast.success("Tarefa completada com sucesso!");
       setTodos(newTodos);
 
-      setTimeout(() => { removeTodo(id) }, 1000);
+     
       return;
     }
   
