@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+Todo List - React + TypeScript + Vite
+Este é um projeto de Todo List desenvolvido em React com TypeScript, utilizando Vite para inicialização e React Hot Toast para notificações.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologias Utilizadas
+React
+TypeScript
+Vite
+React Hot Toast (Notificações)
+📦 Instalação e Execução
+Clone o repositório
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/seu-repositorio.git
+Entre na pasta do projeto
+bash
+Copiar
+Editar
+cd nome-do-repositorio
+Instale as dependências
+bash
+Copiar
+Editar
+npm install
+Inicie o projeto
+bash
+Copiar
+Editar
+npm run dev
+🎯 Funcionalidades
+✅ Adicionar tarefas
+✅ Remover tarefas
+✅ Marcar/desmarcar como concluída
+✅ Notificações via React Hot Toast
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+🖥️ Preview em breve...
