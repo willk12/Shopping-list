@@ -1,12 +1,12 @@
-Todo List - React + TypeScript + Vite
+#Todo List - React + TypeScript + Vite
 Este é um projeto de Todo List desenvolvido em React com TypeScript, utilizando Vite para inicialização e React Hot Toast para notificações.
 
-🚀 Tecnologias Utilizadas
+#🚀 Tecnologias Utilizadas
 React
 TypeScript
 Vite
 React Hot Toast (Notificações)
-📦 Instalação e Execução
+#📦 Instalação e Execução
 Clone o repositório
 bash
 Copiar
@@ -27,7 +27,7 @@ bash
 Copiar
 Editar
 npm run dev
-🎯 Funcionalidades
+#🎯 Funcionalidades
 ✅ Adicionar tarefas
 ✅ Remover tarefas
 ✅ Marcar/desmarcar como concluída
